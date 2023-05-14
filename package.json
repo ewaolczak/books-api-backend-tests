@@ -10,5 +10,7 @@
   },
   "repository": "git@github.com:ewaolczak/books-api-backend-tests.git",
   "author": "Ewa Olczak <ewa.olczak@gmail.com>",
-  "test": "mocha --watch"
+  "scripts": {
+  "test": "mocha --watch \"./{,!(node_modules|client)/**/}*.test.js\""
+  }
 }
