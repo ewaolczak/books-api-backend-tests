@@ -3,9 +3,10 @@ const expect = require('chai').expect;
 
 describe('FormatFullname', () => {
   it('should return proper formatting "formatFullname" for args', () => {
-    expect(formatFullname('jOHN dOE')).to.equal('Error');
-    expect(formatFullname('john doe')).to.equal('Error');
-    expect(formatFullname('JOHN DOE')).to.equal('Error');
+    expect(formatFullname('jOHN dOE')).to.equal('John Doe');
+    expect(formatFullname('john doe')).to.equal('John Doe');
+    expect(formatFullname('JOHN DOE')).to.equal('John Doe');
+    expect(formatFullname('John Doe')).to.equal('John Doe');
   });
 
   it('should return an error if "fullname" arg length is 0', () => {
